@@ -11,6 +11,7 @@
       <div style="padding: 10px 0;">
         <input v-colorSwatch="{bgColor: 'green'}">
         <button type="button" class="mui-btn mui-btn-primary" @click="test">点击</button>
+        <button type="button" class="mui-btn mui-btn-primary" @click="goLogin">跳转login</button>
       </div>
       <div>
         <img src="../assets/img/temp/1.jpg">
@@ -54,6 +55,9 @@ export default {
     },
     test() {
       utils.testFn();
+    },
+    goLogin() {
+      this.$router.push('/login');
     }
   }
 };
